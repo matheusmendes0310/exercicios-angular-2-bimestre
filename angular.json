@@ -1,0 +1,403 @@
+{
+  "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
+  "version": 1,
+  "cli": {
+    "analytics": false,
+    "packageManager": "npm"
+  },
+  "newProjectRoot": "projects",
+  "projects": {
+    "exercicio-01": {
+      "projectType": "application",
+      "root": "projects/exercicio-01",
+      "sourceRoot": "projects/exercicio-01/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "projects/exercicio-01/src/main.ts",
+            "index": "projects/exercicio-01/src/index.html",
+            "tsConfig": "projects/exercicio-01/tsconfig.app.json",
+            "outputPath": "dist/exercicio-01",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/exercicio-01/public"
+              }
+            ],
+            "styles": [
+              "styles.css"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "all",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                }
+              ]
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "exercicio-01:build:production"
+            },
+            "development": {
+              "buildTarget": "exercicio-01:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        }
+      }
+    },
+    "exercicio-02": {
+      "projectType": "application",
+      "root": "projects/exercicio-02",
+      "sourceRoot": "projects/exercicio-02/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "projects/exercicio-02/src/main.ts",
+            "index": "projects/exercicio-02/src/index.html",
+            "tsConfig": "projects/exercicio-02/tsconfig.app.json",
+            "outputPath": "dist/exercicio-02",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/exercicio-02/public"
+              }
+            ],
+            "styles": [
+              "styles.css"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "all",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                }
+              ]
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "exercicio-02:build:production"
+            },
+            "development": {
+              "buildTarget": "exercicio-02:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        }
+      }
+    },
+    "exercicio-03": {
+      "projectType": "application",
+      "root": "projects/exercicio-03",
+      "sourceRoot": "projects/exercicio-03/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "projects/exercicio-03/src/main.ts",
+            "index": "projects/exercicio-03/src/index.html",
+            "tsConfig": "projects/exercicio-03/tsconfig.app.json",
+            "outputPath": "dist/exercicio-03",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/exercicio-03/public"
+              }
+            ],
+            "styles": [
+              "styles.css"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "all",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                }
+              ]
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "exercicio-03:build:production"
+            },
+            "development": {
+              "buildTarget": "exercicio-03:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        }
+      }
+    },
+    "exercicio-04": {
+      "projectType": "application",
+      "root": "projects/exercicio-04",
+      "sourceRoot": "projects/exercicio-04/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "projects/exercicio-04/src/main.ts",
+            "index": "projects/exercicio-04/src/index.html",
+            "tsConfig": "projects/exercicio-04/tsconfig.app.json",
+            "outputPath": "dist/exercicio-04",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/exercicio-04/public"
+              }
+            ],
+            "styles": [
+              "styles.css"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "all",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                }
+              ]
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "exercicio-04:build:production"
+            },
+            "development": {
+              "buildTarget": "exercicio-04:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        }
+      }
+    },
+    "exercicio-05": {
+      "projectType": "application",
+      "root": "projects/exercicio-05",
+      "sourceRoot": "projects/exercicio-05/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "projects/exercicio-05/src/main.ts",
+            "index": "projects/exercicio-05/src/index.html",
+            "tsConfig": "projects/exercicio-05/tsconfig.app.json",
+            "outputPath": "dist/exercicio-05",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/exercicio-05/public"
+              }
+            ],
+            "styles": [
+              "styles.css"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "all",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                }
+              ]
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "exercicio-05:build:production"
+            },
+            "development": {
+              "buildTarget": "exercicio-05:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        }
+      }
+    },
+    "exercicio-06": {
+      "projectType": "application",
+      "root": "projects/exercicio-06",
+      "sourceRoot": "projects/exercicio-06/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "projects/exercicio-06/src/main.ts",
+            "index": "projects/exercicio-06/src/index.html",
+            "tsConfig": "projects/exercicio-06/tsconfig.app.json",
+            "outputPath": "dist/exercicio-06",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/exercicio-06/public"
+              }
+            ],
+            "styles": [
+              "styles.css"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "all",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                }
+              ]
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "exercicio-06:build:production"
+            },
+            "development": {
+              "buildTarget": "exercicio-06:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        }
+      }
+    },
+    "exercicio-07": {
+      "projectType": "application",
+      "root": "projects/exercicio-07",
+      "sourceRoot": "projects/exercicio-07/src",
+      "prefix": "app",
+      "architect": {
+        "build": {
+          "builder": "@angular/build:application",
+          "options": {
+            "browser": "projects/exercicio-07/src/main.ts",
+            "index": "projects/exercicio-07/src/index.html",
+            "tsConfig": "projects/exercicio-07/tsconfig.app.json",
+            "outputPath": "dist/exercicio-07",
+            "assets": [
+              {
+                "glob": "**/*",
+                "input": "projects/exercicio-07/public"
+              }
+            ],
+            "styles": [
+              "styles.css"
+            ]
+          },
+          "configurations": {
+            "production": {
+              "outputHashing": "all",
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                }
+              ]
+            },
+            "development": {
+              "optimization": false,
+              "extractLicenses": false,
+              "sourceMap": true
+            }
+          },
+          "defaultConfiguration": "production"
+        },
+        "serve": {
+          "builder": "@angular/build:dev-server",
+          "configurations": {
+            "production": {
+              "buildTarget": "exercicio-07:build:production"
+            },
+            "development": {
+              "buildTarget": "exercicio-07:build:development"
+            }
+          },
+          "defaultConfiguration": "development"
+        }
+      }
+    }
+  }
+}

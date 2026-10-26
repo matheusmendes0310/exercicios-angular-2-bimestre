@@ -1,0 +1,10 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "outDir": "../../dist/out-tsc/exercicio-02",
+    "types": []
+  },
+  "include": [
+    "src/**/*.ts"
+  ]
+}
